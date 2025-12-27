@@ -1,0 +1,127 @@
+{
+  "agents": {
+    "iris": {
+      "name": "Iris",
+      "role": "Admin Assistant",
+      "description": "Calendar management, task tracking, research assistance",
+      "signals": [
+        "calendar",
+        "schedule",
+        "meeting",
+        "appointment",
+        "task",
+        "todo",
+        "reminder",
+        "research",
+        "find",
+        "look up",
+        "what's on",
+        "when am i",
+        "block time",
+        "add to my list"
+      ],
+      "tools": [
+        "google-calendar",
+        "google-tasks",
+        "web-search"
+      ],
+      "personality": "Crisp, organized, proactive",
+      "contextPath": "agents/iris/CLAUDE.md",
+      "knowledgePath": "agents/iris/knowledge/"
+    },
+    "basil": {
+      "name": "Basil",
+      "role": "Sous Chef",
+      "description": "Culinary assistant for meal planning, recipes, and cooking guidance",
+      "signals": [
+        "recipe",
+        "cook",
+        "cooking",
+        "dinner",
+        "lunch",
+        "breakfast",
+        "meal",
+        "food",
+        "eat",
+        "kitchen",
+        "ingredient",
+        "pinterest.com",
+        "what should we make",
+        "what's for dinner",
+        "gluten",
+        "dietary"
+      ],
+      "tools": [
+        "pinterest-parser",
+        "web-fetch"
+      ],
+      "personality": "Encouraging, practical, playful",
+      "contextPath": "agents/basil/CLAUDE.md",
+      "knowledgePath": "agents/basil/knowledge/"
+    },
+    "muse": {
+      "name": "Muse",
+      "role": "Content Creator",
+      "description": "Draft LinkedIn posts and Substack content in Jacob's voice",
+      "signals": [
+        "linkedin",
+        "substack",
+        "post",
+        "article",
+        "write",
+        "draft",
+        "content",
+        "publish",
+        "blog",
+        "note"
+      ],
+      "tools": [],
+      "personality": "Creative, sharp, collaborative",
+      "contextPath": "agents/muse/CLAUDE.md",
+      "knowledgePath": "agents/muse/knowledge/"
+    },
+    "sage": {
+      "name": "Sage",
+      "role": "Business Coach",
+      "description": "Strategic counterweight for business and leadership decisions",
+      "signals": [
+        "business",
+        "decision",
+        "strategy",
+        "should i",
+        "thinking about",
+        "advice",
+        "coach",
+        "pricing",
+        "hiring",
+        "growth",
+        "partnership",
+        "monica",
+        "arachnidworks"
+      ],
+      "tools": [],
+      "personality": "Direct, challenging, grounded in faith",
+      "contextPath": "agents/sage/CLAUDE.md",
+      "knowledgePath": "agents/sage/knowledge/"
+    }
+  },
+  "routing": {
+    "defaultAgent": "ada",
+    "switchCommands": [
+      "talk to",
+      "switch to",
+      "let me speak with",
+      "connect me to",
+      "back to ada"
+    ],
+    "multiAgentTriggers": [
+      "and also",
+      "then",
+      "after that"
+    ]
+  },
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2024-12"
+  }
+}

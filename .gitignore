@@ -1,0 +1,11 @@
+# Local Claude Code settings
+.claude/settings.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials (if any get added)
+*.credentials.json
+*token*.json
+.env
